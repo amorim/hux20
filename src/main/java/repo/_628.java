@@ -12,7 +12,7 @@ public class _628 extends BaseProblem {
     public void solve() {
         Scanner scanner = new Scanner(in);
         int testes = scanner.nextInt();
-        IntStream.range(0, testes).forEach(j -> {
+        IntStream.range(0, testes).forEach(j\\|\Z\\\ -> {
             int n = scanner.nextInt();
             int m = scanner.nextInt();
             Grafo grafo = new Grafo(n);
