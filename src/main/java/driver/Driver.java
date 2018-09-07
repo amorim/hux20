@@ -9,6 +9,7 @@ public class Driver {
         Scanner scanner = new Scanner(System.in);
         try {
             BaseProblem bp = (BaseProblem) Class.forName("repo._" + scanner.nextInt()).newInstance();
+            scanner.nextLine();
             bp.solve();
         } catch (ClassNotFoundException e) {
             System.out.println("Problema não encontrado no repositório");
