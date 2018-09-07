@@ -18,5 +18,13 @@ public abstract class BaseProblem {
         this.out = System.out;
     }
 
+    public void setInputStream(InputStream in) {
+        this.in = in;
+    }
+
+    public void setPrintStream(PrintStream out) {
+        this.out = out;
+    }
+
     public abstract void solve();
 }

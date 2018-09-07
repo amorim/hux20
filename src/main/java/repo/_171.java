@@ -1,7 +1,7 @@
 package repo;
 
 import model.graph.Grafo;
-import model.node.PrimNode;
+import model.node.BasicNode;
 
 import java.util.Scanner;
 import java.util.stream.IntStream;
@@ -16,7 +16,7 @@ public class _171 extends BaseProblem {
         Grafo grafo = new Grafo(n);
         IntStream.range(0, m).forEach(i -> {
             int a = scanner.nextInt(), b = scanner.nextInt(), c = scanner.nextInt();
-            PrimNode n1 = new PrimNode(), n2 = new PrimNode();
+            BasicNode n1 = new BasicNode(), n2 = new BasicNode();
             n1.number = a;
             n2.number = b;
             n1.weight = c;

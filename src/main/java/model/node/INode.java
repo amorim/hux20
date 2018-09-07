@@ -1,6 +1,6 @@
 package model.node;
 
-public interface INode {
+public interface  INode {
     public int getNodeNumber();
 
     public int getWeight();

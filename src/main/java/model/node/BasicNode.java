@@ -1,6 +1,6 @@
 package model.node;
 
-public class PrimNode implements INode {
+public class BasicNode implements INode {
 
     public int weight;
     public int number;
@@ -17,7 +17,7 @@ public class PrimNode implements INode {
 
     @Override
     public INode getFreshInstance(int nodenumber, int weight) {
-        PrimNode p = new PrimNode();
+        BasicNode p = new BasicNode();
         p.weight = weight;
         p.number = nodenumber;
         return p;
