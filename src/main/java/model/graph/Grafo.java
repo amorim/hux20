@@ -13,6 +13,7 @@ public class Grafo {
     protected ArrayList<Boolean> visited;
     protected ArrayList<Integer> minDistance;
     protected ArrayList<Integer> prev;
+    protected ArrayList<Integer> inEdges;
 
     public Grafo(int vertices) {
         this.vertices = vertices;
@@ -20,11 +21,13 @@ public class Grafo {
         visited = new ArrayList<>();
         minDistance = new ArrayList<>();
         prev = new ArrayList<>();
+        inEdges = new ArrayList<>();
         IntStream.range(0, vertices + 1).forEach(i -> {
            adjacencia.add(new ArrayList<>());
            visited.add(false);
            minDistance.add(Integer.MAX_VALUE);
            prev.add(-1);
+           inEdges.add(0);
         });
 
     }
@@ -39,6 +42,11 @@ public class Grafo {
 
     public void addUndirectedEdge(INode source, INode destination) {
         adjacencia.get(destination.getNodeNumber()).add(new Aresta(destination, source));
+        addEdge(source, destination);
+    }
+
+    public void addTopSortEdge(INode source, INode destination) {
+        inEdges.set(destination.getNodeNumber(), inEdges.get(destination.getNodeNumber()) + 1);
         addEdge(source, destination);
     }
 
@@ -120,6 +128,26 @@ public class Grafo {
                 });
             }
         }
+    }
+
+    public ArrayList<Integer> topologicalSort() {
+        ArrayList<Integer> l = new ArrayList<>(), queue = new ArrayList<>();
+        IntStream.range(0, vertices).forEach(i -> {
+            if (inEdges.get(i) == 0)
+                queue.add(0, i);
+        });
+        while (!queue.isEmpty()) {
+            int n = queue.get(queue.size() - 1);
+            queue.remove(queue.size() - 1);
+            l.add(n);
+            adjacencia.get(n).forEach(a -> {
+                int m = a.getNodeDest().getNodeNumber();
+                inEdges.set(m, inEdges.get(m) - 1);
+                if (inEdges.get(m) == 0)
+                    queue.add(0, m);
+            });
+        }
+        return l;
     }
 
 
