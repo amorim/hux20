@@ -1,10 +1,16 @@
 package repo;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class _420 extends BaseProblem {
+
+    public _420(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     private boolean checkIfIsEqual(String base, String vem) {
         HashMap<Character, Character> dic = new HashMap<>();

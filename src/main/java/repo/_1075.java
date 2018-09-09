@@ -4,11 +4,17 @@ import model.bridge.Bridge;
 import model.graph.Grafo;
 import model.node.BasicNode;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.IntStream;
 
 public class _1075 extends BaseProblem {
+
+    public _1075(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     @Override
     public void solve() {

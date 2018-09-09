@@ -1,8 +1,14 @@
 package repo;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class _975 extends BaseProblem {
+
+    public _975(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     @Override
     public void solve() {

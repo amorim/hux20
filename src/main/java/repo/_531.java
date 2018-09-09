@@ -1,10 +1,16 @@
 package repo;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
 public class _531 extends BaseProblem {
+
+    public _531(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     @Override
     public void solve() {

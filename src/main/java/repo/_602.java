@@ -1,9 +1,15 @@
 package repo;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class _602 extends BaseProblem {
+
+    public _602(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     private int[][] matriz;
 

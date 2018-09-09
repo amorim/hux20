@@ -1,0 +1,43 @@
+Menor elemento neste passo: 30
+Estado Atual: 30 | 913 | 770 | 97 | 715 | 236 | 73 | 125 | 604 | 271 | 827 | 871 | 987 | 712 | 480
+
+Menor elemento neste passo: 73
+Estado Atual: 30 | 73 | 770 | 97 | 715 | 236 | 913 | 125 | 604 | 271 | 827 | 871 | 987 | 712 | 480
+
+Menor elemento neste passo: 97
+Estado Atual: 30 | 73 | 97 | 770 | 715 | 236 | 913 | 125 | 604 | 271 | 827 | 871 | 987 | 712 | 480
+
+Menor elemento neste passo: 125
+Estado Atual: 30 | 73 | 97 | 125 | 715 | 236 | 913 | 770 | 604 | 271 | 827 | 871 | 987 | 712 | 480
+
+Menor elemento neste passo: 236
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 715 | 913 | 770 | 604 | 271 | 827 | 871 | 987 | 712 | 480
+
+Menor elemento neste passo: 271
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 913 | 770 | 604 | 715 | 827 | 871 | 987 | 712 | 480
+
+Menor elemento neste passo: 480
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 770 | 604 | 715 | 827 | 871 | 987 | 712 | 913
+
+Menor elemento neste passo: 604
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 770 | 715 | 827 | 871 | 987 | 712 | 913
+
+Menor elemento neste passo: 712
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 712 | 715 | 827 | 871 | 987 | 770 | 913
+
+Menor elemento neste passo: 715
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 712 | 715 | 827 | 871 | 987 | 770 | 913
+
+Menor elemento neste passo: 770
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 712 | 715 | 770 | 871 | 987 | 827 | 913
+
+Menor elemento neste passo: 827
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 712 | 715 | 770 | 827 | 987 | 871 | 913
+
+Menor elemento neste passo: 871
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 712 | 715 | 770 | 827 | 871 | 987 | 913
+
+Menor elemento neste passo: 913
+Estado Atual: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 712 | 715 | 770 | 827 | 871 | 913 | 987
+
+Resultado Final: 30 | 73 | 97 | 125 | 236 | 271 | 480 | 604 | 712 | 715 | 770 | 827 | 871 | 913 | 987

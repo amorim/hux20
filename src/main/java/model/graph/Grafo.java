@@ -1,5 +1,6 @@
 package model.graph;
 
+import model.node.BasicNode;
 import model.node.INode;
 import model.node.INodeComparator;
 
@@ -23,11 +24,11 @@ public class Grafo {
         prev = new ArrayList<>();
         inEdges = new ArrayList<>();
         IntStream.range(0, vertices + 1).forEach(i -> {
-           adjacencia.add(new ArrayList<>());
-           visited.add(false);
-           minDistance.add(Integer.MAX_VALUE);
-           prev.add(-1);
-           inEdges.add(0);
+            adjacencia.add(new ArrayList<>());
+            visited.add(false);
+            minDistance.add(Integer.MAX_VALUE);
+            prev.add(-1);
+            inEdges.add(0);
         });
 
     }
@@ -79,18 +80,21 @@ public class Grafo {
         visited.set(source, true);
         int sum = 0;
         for (Aresta n : adjacencia.get(source)) {
-           if (!visited.get(n.getNodeDest().getNodeNumber())) {
-               visited.set(n.getNodeDest().getNodeNumber(), true);
-               sum++;
-               sum += dfs(n.getNodeDest().getNodeNumber());
-           }
+            if (!visited.get(n.getNodeDest().getNodeNumber())) {
+                visited.set(n.getNodeDest().getNodeNumber(), true);
+                sum++;
+                sum += dfs(n.getNodeDest().getNodeNumber());
+            }
         }
         return sum;
     }
 
     public int prim(int source) {
         PriorityQueue<INode> queue = new PriorityQueue<>(new INodeComparator());
-        queue.add(getNodeByNumber(source).getFreshInstance(source, 0));
+        BasicNode bn = new BasicNode();
+        bn.number = source;
+        bn.weight = 0;
+        queue.add(bn);
         int total = 0;
         while (!queue.isEmpty()) {
             INode current = queue.poll();
@@ -98,9 +102,7 @@ public class Grafo {
                 visited.set(current.getNodeNumber(), true);
                 total += current.getWeight();
                 adjacencia.get(current.getNodeNumber()).forEach(n -> {
-                    if (!visited.get(n.getNodeDest().getNodeNumber())) {
-                        queue.add(n.getNodeDest());
-                    }
+                    queue.add(n.getNodeDest());
                 });
             }
         }
@@ -116,17 +118,14 @@ public class Grafo {
         minDistance.set(source, 0);
         while (!queue.isEmpty()) {
             INode current = queue.poll();
-            if (!visited.get(current.getNodeNumber())) {
-                visited.set(current.getNodeNumber(), true);
-                adjacencia.get(current.getNodeNumber()).forEach(n -> {
-                    int distance = current.getWeight() + n.getNodeDest().getWeight();
-                    if (distance < minDistance.get(n.getNodeDest().getNodeNumber())) {
-                        minDistance.set(n.getNodeDest().getNodeNumber(), distance);
-                        prev.set(n.getNodeDest().getNodeNumber(), current.getNodeNumber());
-                        queue.add(n.getNodeDest().getFreshInstance(n.getNodeDest().getNodeNumber(), distance));
-                    }
-                });
-            }
+            adjacencia.get(current.getNodeNumber()).forEach(n -> {
+                int distance = current.getWeight() + n.getNodeDest().getWeight();
+                if (distance < minDistance.get(n.getNodeDest().getNodeNumber())) {
+                    minDistance.set(n.getNodeDest().getNodeNumber(), distance);
+                    prev.set(n.getNodeDest().getNodeNumber(), current.getNodeNumber());
+                    queue.add(n.getNodeDest().getFreshInstance(n.getNodeDest().getNodeNumber(), distance));
+                }
+            });
         }
     }
 

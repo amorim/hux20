@@ -11,6 +11,11 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
+test {
+    useJUnitPlatform()
+}
 
+dependencies {
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:5.2.0"
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
 }

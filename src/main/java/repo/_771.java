@@ -1,9 +1,15 @@
 package repo;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class _771 extends BaseProblem {
+
+    public _771(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     @Override
     public void solve() {

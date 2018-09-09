@@ -3,6 +3,8 @@ package repo;
 import model.graph.Grafo;
 import model.node.BasicNode;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -11,13 +13,17 @@ import java.util.stream.IntStream;
 
 public class _474 extends BaseProblem {
 
+    public _474(InputStream in, PrintStream out) {
+        super(in, out);
+    }
+
     @Override
     public void solve() {
         Scanner scanner = new Scanner(in);
         out.println("SHIPPING ROUTES OUTPUT\n");
         int testes = scanner.nextInt();
         IntStream.range(0, testes).forEach(t -> {
-            out.println("DATA SET " + (t + 1) + "\n");
+            out.println("DATA SET  " + (t + 1) + "\n");
             int m = scanner.nextInt(), n = scanner.nextInt(), p = scanner.nextInt();
             scanner.nextLine();
             HashMap<String, Integer> mapao = new HashMap<>();

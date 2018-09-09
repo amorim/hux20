@@ -1,16 +1,23 @@
 package repo;
 
+import model.graph.Aresta;
 import model.graph.Grafo;
 import model.node.BasicNode;
 import model.node.INode;
 import model.node.INodeComparator;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class _146 extends BaseProblem {
+
+    public _146(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     private class _146Grafo extends Grafo {
 
@@ -30,19 +37,19 @@ public class _146 extends BaseProblem {
             queue.add(super.getNodeByNumber(source).getFreshInstance(source, 0));
             minDistance.set(source, 0);
             while (!queue.isEmpty()) {
-                INode current = queue.poll();
+                INode current = queue.remove();
                 if (visitedN.get(current.getNodeNumber()) < 3) {
                     visitedN.set(current.getNodeNumber(), visitedN.get(current.getNodeNumber()) + 1);
-                    adjacencia.get(current.getNodeNumber()).forEach(n -> {
-                        _146Node node = (_146Node) n.getNodeDest();
+                    for (Aresta a : adjacencia.get(current.getNodeNumber())) {
+                        _146Node node = (_146Node) a.getNodeDest();
                         int distance = current.getWeight() + node.getWeight();
-                        if ((node.semaforo == 1 && (distance - 1) % 3 == 0) || ((node.semaforo) == 0 && (distance - 1) % 3 != 0)) {
+                        if ((node.semaforo == 1 && (distance - 1) % 3 == 0) || (node.semaforo == 0 && (distance - 1) % 3 != 0)) {
                             if (distance < minDistance.get(node.getNodeNumber()))
                                 minDistance.set(node.getNodeNumber(), distance);
                             prev.set(node.getNodeNumber(), current.getNodeNumber());
                             queue.add(node.getFreshInstance(node.getNodeNumber(), distance));
                         }
-                    });
+                    }
                 }
             }
         }

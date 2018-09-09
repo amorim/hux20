@@ -1,8 +1,14 @@
 package repo;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class _138 extends BaseProblem {
+
+    public _138(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     private class Car {
         public int id, comp, pos;

@@ -5,12 +5,18 @@ import model.node.BasicNode;
 import model.node.INode;
 import model.node.INodeComparator;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class _738 extends BaseProblem {
+
+    public _738(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     private class _738Grafo extends Grafo {
 

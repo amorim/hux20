@@ -1,0 +1,321 @@
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 1 Tomita
+Tomita 1 Volponi
+Volponi 1 Gustavo
+Gustavo 1 Frederico
+Frederico 1 Lucas
+Lucas 1 Luciano
+Luciano 1 Joaquina
+Joaquina 1 Camila
+Camila 1 Larissa
+Larissa 1 Patricia
+Patricia 0
+Pamela 1 ZeRenato
+Pedrinho 1 ZeRenato
+AlexandreOliva 1 Celio
+Celio 1 Islene
+Islene 1 UlissesFurquimF
+UlissesFurquimF 1 Maria
+Maria 1 Renata
+Renata 1 Teixeira
+Teixeira 1 Bezerra
+Bezerra 1 Amaral
+Amaral 1 Rodrigo
+Rodrigo 1 Vinicius
+Vinicius 1 Anido
+Anido 1 Edson
+Edson 1 Renato
+Renato 1 Jose
+Jose 1 Joao
+Joao 1 Cavi
+Cavi 2 Pamela Pedrinho
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+UlissesFurquimF 1 Islene
+Maria 1 UlissesFurquimF
+Renata 1 Maria
+Teixeira 1 Renata
+Bezerra 2 Teixeira Edson
+Amaral 1 Bezerra
+Rodrigo 1 Amaral
+Vinicius 1 Rodrigo
+Anido 1 Vinicius
+Edson 1 Anido
+Lucas 1 Frederico
+Luciano 1 Lucas
+Joaquina 1 Luciano
+Camila 1 Joaquina
+Larissa 1 Camila
+Patricia 1 Larissa
+Pamela 1 Patricia
+Pedrinho 1 Pamela
+AlexandreOliva 1 Pedrinho
+Celio 1 AlexandreOliva
+Islene 0
+Renato 1 Edson
+Jose 1 Renato
+Joao 1 Jose
+Cavi 1 Joao
+ZeRenato 1 Cavi
+Tomita 1 ZeRenato
+Volponi 1 Tomita
+Gustavo 1 Volponi
+Frederico 1 Gustavo
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 0
+Tomita 1 ZeRenato
+Volponi 1 Tomita
+Gustavo 1 Volponi
+Frederico 1 Gustavo
+Lucas 1 Frederico
+Luciano 1 Lucas
+Joaquina 1 Luciano
+Camila 1 Joaquina
+Larissa 1 Camila
+Patricia 1 Larissa
+Pamela 1 Patricia
+Pedrinho 1 Pamela
+AlexandreOliva 1 Pedrinho
+Celio 1 AlexandreOliva
+Islene 1 Celio
+UlissesFurquimF 2 Cavi Islene
+Maria 1 ZeRenato
+Renata 1 Maria
+Teixeira 1 Renata
+Bezerra 1 Teixeira
+Amaral 1 Bezerra
+Rodrigo 1 Amaral
+Vinicius 1 Rodrigo
+Anido 1 Vinicius
+Edson 1 Anido
+Renato 1 Edson
+Jose 1 Renato
+Joao 1 Jose
+Cavi 1 Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 0
+Tomita 1 ZeRenato
+Volponi 1 ZeRenato
+Gustavo 2 Tomita Volponi
+Frederico 1 Gustavo
+Lucas 1 Gustavo
+Luciano 2 Lucas Frederico
+Joaquina 1 Luciano
+Camila 1 Luciano
+Larissa 2 Joaquina Camila
+Patricia 1 Larissa
+Pamela 1 Larissa
+Pedrinho 2 Patricia Pamela
+AlexandreOliva 1 Pedrinho
+Celio 1 Pedrinho
+Islene 2 Celio AlexandreOliva
+UlissesFurquimF 1 Islene
+Maria 1 Islene
+Renata 2 UlissesFurquimF Maria
+Teixeira 1 Renata
+Bezerra 1 Renata
+Amaral 2 Teixeira Bezerra
+Rodrigo 1 Amaral
+Vinicius 1 Amaral
+Anido 2 Rodrigo Vinicius
+Edson 1 Anido
+Renato 1 Anido
+Jose 2 Edson Renato
+Joao 1 Jose
+Cavi 1 Jose
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 0
+Tomita 1 ZeRenato
+Volponi 1 ZeRenato
+Gustavo 2 Tomita Volponi
+Frederico 1 Gustavo
+Lucas 1 Gustavo
+Luciano 2 Lucas Frederico
+Joaquina 1 Luciano
+Camila 1 Luciano
+Larissa 2 Joaquina Camila
+Patricia 1 Larissa
+Pamela 1 Larissa
+Pedrinho 2 Patricia Pamela
+AlexandreOliva 1 Pedrinho
+Celio 1 Pedrinho
+Islene 2 Celio AlexandreOliva
+UlissesFurquimF 1 Islene
+Maria 1 Islene
+Renata 2 UlissesFurquimF Maria
+Teixeira 1 Renata
+Bezerra 1 Renata
+Amaral 2 Teixeira Bezerra
+Rodrigo 1 Amaral
+Vinicius 1 Amaral
+Anido 2 Rodrigo Vinicius
+Edson 1 Anido
+Renato 1 Anido
+Jose 2 Edson Renato
+Joao 2 Jose Cavi
+Cavi 2 Jose Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 0
+Tomita 1 ZeRenato
+Volponi 2 ZeRenato Tomita
+Gustavo 2 Tomita Volponi
+Frederico 1 Gustavo
+Lucas 2 Gustavo Frederico
+Luciano 2 Lucas Frederico
+Joaquina 1 Luciano
+Camila 2 Luciano Joaquina
+Larissa 2 Joaquina Camila
+Patricia 1 Larissa
+Pamela 2 Larissa Patricia
+Pedrinho 2 Patricia Pamela
+AlexandreOliva 1 Pedrinho
+Celio 2 Pedrinho AlexandreOliva
+Islene 2 Celio AlexandreOliva
+UlissesFurquimF 1 Islene
+Maria 2 Islene UlissesFurquimF
+Renata 2 UlissesFurquimF Maria
+Teixeira 1 Renata
+Bezerra 2 Renata Teixeira
+Amaral 2 Teixeira Bezerra
+Rodrigo 1 Amaral
+Vinicius 2 Amaral Rodrigo
+Anido 2 Rodrigo Vinicius
+Edson 1 Anido
+Renato 2 Anido Edson
+Jose 2 Edson Renato
+Joao 1 Jose
+Cavi 2 Jose Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 1 Cavi
+Tomita 1 ZeRenato
+Volponi 2 ZeRenato Tomita
+Gustavo 2 Tomita Volponi
+Frederico 1 Gustavo
+Lucas 2 Gustavo Frederico
+Luciano 2 Lucas Frederico
+Joaquina 1 Luciano
+Camila 2 Luciano Joaquina
+Larissa 2 Joaquina Camila
+Patricia 1 Larissa
+Pamela 2 Larissa Patricia
+Pedrinho 2 Patricia Pamela
+AlexandreOliva 1 Pedrinho
+Celio 2 Pedrinho AlexandreOliva
+Islene 2 Celio AlexandreOliva
+UlissesFurquimF 1 Islene
+Maria 2 Islene UlissesFurquimF
+Renata 2 UlissesFurquimF Maria
+Teixeira 1 Renata
+Bezerra 2 Renata Teixeira
+Amaral 2 Teixeira Bezerra
+Rodrigo 1 Amaral
+Vinicius 2 Amaral Rodrigo
+Anido 2 Rodrigo Vinicius
+Edson 1 Anido
+Renato 2 Anido Edson
+Jose 2 Edson Renato
+Joao 1 Jose
+Cavi 2 Jose Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 0
+Tomita 1 Cavi
+Volponi 1 Tomita
+Gustavo 2 Tomita Volponi
+Frederico 1 Gustavo
+Lucas 2 Gustavo Frederico
+Luciano 2 Lucas Frederico
+Joaquina 1 Luciano
+Camila 2 Luciano Joaquina
+Larissa 2 Joaquina Camila
+Patricia 1 Larissa
+Pamela 2 Larissa Patricia
+Pedrinho 2 Patricia Pamela
+AlexandreOliva 1 Pedrinho
+Celio 2 Pedrinho AlexandreOliva
+Islene 2 Celio AlexandreOliva
+UlissesFurquimF 1 Islene
+Maria 2 Islene UlissesFurquimF
+Renata 2 UlissesFurquimF Maria
+Teixeira 1 Renata
+Bezerra 2 Renata Teixeira
+Amaral 2 Teixeira Bezerra
+Rodrigo 1 Amaral
+Vinicius 2 Amaral Rodrigo
+Anido 2 Rodrigo Vinicius
+Edson 1 Anido
+Renato 2 Anido Edson
+Jose 2 Edson Renato
+Joao 1 Jose
+Cavi 2 Jose Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 1 UlissesFurquimF
+Tomita 1 ZeRenato
+Volponi 1 Tomita
+Gustavo 1 Volponi
+Frederico 1 Gustavo
+Lucas 1 Frederico
+Luciano 1 Lucas
+Joaquina 1 Luciano
+Camila 1 Joaquina
+Larissa 1 Camila
+Patricia 1 Larissa
+Pamela 1 Patricia
+Pedrinho 1 Pamela
+AlexandreOliva 1 Pedrinho
+Celio 1 AlexandreOliva
+Islene 1 Celio
+UlissesFurquimF 2 Cavi Islene
+Maria 1 ZeRenato
+Renata 1 Maria
+Teixeira 1 Renata
+Bezerra 1 Teixeira
+Amaral 1 Bezerra
+Rodrigo 1 Amaral
+Vinicius 1 Rodrigo
+Anido 1 Vinicius
+Edson 1 Anido
+Renato 1 Edson
+Jose 1 Renato
+Joao 1 Jose
+Cavi 1 Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 0
+Tomita 1 ZeRenato
+Volponi 1 Tomita
+Gustavo 1 Volponi
+Frederico 1 Gustavo
+Lucas 1 Frederico
+Luciano 1 Lucas
+Joaquina 1 Luciano
+Camila 1 Joaquina
+Larissa 1 Camila
+Patricia 1 Larissa
+Pamela 1 Patricia
+Pedrinho 1 Pamela
+AlexandreOliva 1 Pedrinho
+Celio 1 AlexandreOliva
+Islene 1 Celio
+UlissesFurquimF 16 Cavi Islene ZeRenato Volponi Frederico Luciano Camila Patricia Pedrinho Celio Joao Renato Anido Rodrigo Bezerra Renata
+Maria 1 ZeRenato
+Renata 1 Maria
+Teixeira 1 Renata
+Bezerra 1 Teixeira
+Amaral 1 Bezerra
+Rodrigo 1 Amaral
+Vinicius 1 Rodrigo
+Anido 1 Vinicius
+Edson 1 Anido
+Renato 1 Edson
+Jose 1 Renato
+Joao 1 Jose
+Cavi 1 Joao
+0

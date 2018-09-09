@@ -2,11 +2,17 @@ package repo;
 
 import model.tree.BinaryTree;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.Stack;
 import java.util.stream.IntStream;
 
 public class _1217 extends BaseProblem {
+
+    public _1217(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     public BinaryTree<Character> convertPostFixToTree(String input) {
         Stack<BinaryTree<Character>> stack = new Stack<>();
@@ -28,6 +34,6 @@ public class _1217 extends BaseProblem {
         BinaryTree<Character> res = convertPostFixToTree(scanner.nextLine());
         out.println("Mensagem decodificada: " + res.getInOrderString());
         out.println("Arvore construida:");
-        out.println(res.getDfsString(0));
+        out.print(res.getDfsString(0));
     }
 }

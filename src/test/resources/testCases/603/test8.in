@@ -1,0 +1,97 @@
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 1 Cavi
+Tomita 2 ZeRenato Volponi
+Volponi 1 ZeRenato
+Gustavo 3 Frederico Larissa Pedrinho
+Frederico 2 Joaquina Larissa
+Lucas 1 Volponi
+Luciano 1 Lucas
+Joaquina 2 Lucas Luciano
+Camila 1 Luciano
+Larissa 3 Camila Patricia Joaquina
+Patricia 1 Camila
+Pamela 2 Camila Patricia
+Pedrinho 2 AlexandreOliva UlissesFurquimF
+AlexandreOliva 2 Celio Islene
+Celio 1 Patricia
+Islene 1 Celio
+UlissesFurquimF 2 Maria Renata
+Maria 1 Islene
+Renata 1 Teixeira
+Teixeira 2 Renata Maria
+Bezerra 1 Renata
+Amaral 1 Bezerra
+Rodrigo 2 Bezerra Amaral
+Vinicius 2 Anido Rodrigo
+Anido 2 Edson Renato
+Edson 1 Amaral
+Renato 1 Edson
+Jose 2 Cavi Joao
+Joao 1 Renato
+Cavi 1 Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+ZeRenato 1 Cavi
+Tomita 2 ZeRenato Volponi
+Volponi 1 ZeRenato
+Gustavo 3 Frederico Larissa Pedrinho
+Frederico 2 Joaquina Larissa
+Lucas 1 Volponi
+Luciano 1 Lucas
+Joaquina 2 Lucas Luciano
+Camila 1 Luciano
+Larissa 3 Camila Patricia Joaquina
+Patricia 1 Camila
+Pamela 2 Camila Patricia
+Pedrinho 2 AlexandreOliva UlissesFurquimF
+AlexandreOliva 2 Celio Islene
+Celio 1 Patricia
+Islene 1 Celio
+UlissesFurquimF 2 Maria Renata
+Maria 0
+Renata 0
+Teixeira 2 Renata Maria
+Bezerra 1 Maria
+Amaral 1 Bezerra
+Rodrigo 2 Bezerra Amaral
+Vinicius 2 Anido Rodrigo
+Anido 2 Edson Renato
+Edson 1 Amaral
+Renato 1 Edson
+Jose 2 Cavi Joao
+Joao 1 Renato
+Cavi 1 Joao
+30
+UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato Tomita Volponi Gustavo Frederico Lucas Luciano Joaquina Camila Larissa Patricia Pamela Pedrinho AlexandreOliva Celio Islene
+Tomita 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Volponi 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Gustavo 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Frederico 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Lucas 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Luciano 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Joaquina 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Camila 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Larissa 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Patricia 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Pamela 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Pedrinho 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+AlexandreOliva 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Celio 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+Islene 15 UlissesFurquimF Maria Renata Teixeira Bezerra Amaral Rodrigo Vinicius Anido Edson Renato Jose Joao Cavi ZeRenato
+UlissesFurquimF 2 Maria Renata
+Maria 0
+Renata 0
+Teixeira 2 Renata Maria
+Bezerra 2 Teixeira UlissesFurquimF
+Amaral 1 Maria
+Rodrigo 2 Amaral Vinicius
+Vinicius 1 Amaral
+Anido 2 Vinicius Rodrigo
+Edson 1 Renato
+Renato 1 Joao
+Jose 1 Edson
+Joao 1 Cavi
+Cavi 1 ZeRenato
+ZeRenato 0
+0

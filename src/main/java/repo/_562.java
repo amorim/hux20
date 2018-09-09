@@ -3,11 +3,17 @@ package repo;
 import model.graph.Grafo;
 import model.node.BasicNode;
 
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class _562 extends BaseProblem {
+
+    public _562(InputStream in, PrintStream out) {
+        super(in, out);
+    }
 
     @Override
     public void solve() {
