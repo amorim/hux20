@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 
 public class Grafo {
     protected ArrayList<ArrayList<Aresta>> adjacencia;
-    protected int vertices;
+    private int vertices;
     protected ArrayList<Boolean> visited;
     protected ArrayList<Integer> minDistance;
     protected ArrayList<Integer> prev;

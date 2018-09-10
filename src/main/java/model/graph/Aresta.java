@@ -17,4 +17,13 @@ public class Aresta {
     public INode getNodeDest() {
         return n2;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Aresta) {
+            Aresta a = (Aresta) obj;
+            return this.n1.getNodeNumber() == a.n1.getNodeNumber() && this.n2.getNodeNumber() == a.n2.getNodeNumber();
+        }
+        return false;
+    }
 }

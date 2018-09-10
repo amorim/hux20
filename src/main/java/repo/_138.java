@@ -57,7 +57,7 @@ public class _138 extends BaseProblem {
     public void solve() {
         Scanner scanner = new Scanner(in);
         int c = scanner.nextInt(), eventos = scanner.nextInt();
-        while (c != -1 || eventos != -1) {
+        while (c != -1) {
             Car[] carros = new Car[c];
             int ganhos = 0;
             while (eventos-- != 0) {
@@ -65,7 +65,7 @@ public class _138 extends BaseProblem {
                 if (com.equals("C")) {
                     if (parkCarInParkingLotIfAnySpaceIsAvailable(carros, new Car(scanner.nextInt(), scanner.nextInt())))
                         ganhos += 10;
-                } else if (com.equals("S"))
+                } else
                     byeCar(carros, scanner.nextInt());
             }
             out.println(ganhos);

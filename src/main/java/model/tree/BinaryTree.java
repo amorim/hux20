@@ -24,7 +24,7 @@ public class BinaryTree<T> {
         for (int i = 0; i < level; i++)
             s.append(" ");
         s.append(item);
-        s.append("\n");
+        s.append(System.lineSeparator());
         if (left != null)
             s.append(left.getDfsString(level + 1));
         if (right != null)

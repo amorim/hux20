@@ -7,116 +7,13 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 class GrafoTest {
 
-    class GrafoNoProtection extends Grafo {
-
-        public GrafoNoProtection(int vertices) {
-            super(vertices);
-        }
-
-        public ArrayList<Boolean> getVisited() {
-            return visited;
-        }
-
-        public ArrayList<Integer> getMinDistance() {
-            return minDistance;
-        }
-
-        public ArrayList<ArrayList<Aresta>> getAdjacencia() {
-            return adjacencia;
-        }
-
-        public void setAdjacenciaImmediate(ArrayList<ArrayList<Aresta>> adj) {
-            adjacencia = adj;
-        }
-
-        public void setInEdgesImmediate(ArrayList<Integer> inEdges) {
-            this.inEdges = inEdges;
-        }
-    }
-
-    // grafo: https://i.imgur.com/6FrbkHk.png
-    ArrayList<ArrayList<Aresta>> getExampleAdj() {
-        ArrayList<Aresta> a1 = new ArrayList<>();
-        a1.add(new Aresta(new BasicNode(1, 1), new BasicNode(4,1)));
-        ArrayList<Aresta> a2 = new ArrayList<>();
-        a2.add(new Aresta(new BasicNode(2, 1), new BasicNode(1, 1)));
-        a2.add(new Aresta(new BasicNode(2, 5), new BasicNode(3, 5)));
-        a2.add(new Aresta(new BasicNode(2,2), new BasicNode(4, 2)));
-        ArrayList<Aresta> a3 = new ArrayList<>();
-        a3.add(new Aresta(new BasicNode(3, 1), new BasicNode(1, 1)));
-        a3.add(new Aresta(new BasicNode(3, 5), new BasicNode(5,     5)));
-        ArrayList<Aresta> a4 = new ArrayList<>();
-        a4.add(new Aresta(new BasicNode(4, 2), new BasicNode(5, 2)));
-        ArrayList<Aresta> a5 = new ArrayList<>();
-        a5.add(new Aresta(new BasicNode(5, 3), new BasicNode(3, 3)));
-        ArrayList<ArrayList<Aresta>> arr = new ArrayList<>();
-        arr.add(new ArrayList<>());
-        arr.add(a1);
-        arr.add(a2);
-        arr.add(a3);
-        arr.add(a4);
-        arr.add(a5);
-        return arr;
-    }
-
-    // grafo: https://www.geeksforgeeks.org/wp-content/uploads/graph.png
-    ArrayList<ArrayList<Aresta>> getExampleAdjTopSort() {
-        ArrayList<Aresta> a2 = new ArrayList<>();
-        a2.add(new Aresta(new BasicNode(2, 0), new BasicNode(3, 0)));
-        ArrayList<Aresta> a3 = new ArrayList<>();
-        a3.add(new Aresta(new BasicNode(3, 0), new BasicNode(1, 0)));
-        ArrayList<Aresta> a4 = new ArrayList<>();
-        a4.add(new Aresta(new BasicNode(4, 0), new BasicNode(1, 0)));
-        a4.add(new Aresta(new BasicNode(4, 0), new BasicNode(0, 0)));
-        ArrayList<Aresta> a5 = new ArrayList<>();
-        a5.add(new Aresta(new BasicNode(5, 0), new BasicNode(2, 0)));
-        a5.add(new Aresta(new BasicNode(5, 0), new BasicNode(0, 0)));
-        ArrayList<ArrayList<Aresta>> arr = new ArrayList<>();
-        arr.add(new ArrayList<>());
-        arr.add(new ArrayList<>());
-        arr.add(a2);
-        arr.add(a3);
-        arr.add(a4);
-        arr.add(a5);
-        return arr;
-    }
-
-    // grafo: https://i.imgur.com/TQbo9n4.png
-    ArrayList<ArrayList<Aresta>> getExampleAdjUndirected() {
-        ArrayList<Aresta> a1 = new ArrayList<>();
-        a1.add(new Aresta(new BasicNode(1, 2), new BasicNode(2,2)));
-        a1.add(new Aresta(new BasicNode(1, 1), new BasicNode(4, 1)));
-        a1.add(new Aresta(new BasicNode(1, 2), new BasicNode(5, 2)));
-        ArrayList<Aresta> a2 = new ArrayList<>();
-        a2.add(new Aresta(new BasicNode(2, 2), new BasicNode(1, 2)));
-        a2.add(new Aresta(new BasicNode(2, 1), new BasicNode(3, 1)));
-        a2.add(new Aresta(new BasicNode(2,2), new BasicNode(4, 2)));
-        ArrayList<Aresta> a3 = new ArrayList<>();
-        a3.add(new Aresta(new BasicNode(3, 1), new BasicNode(2, 1)));
-        a3.add(new Aresta(new BasicNode(3, 2), new BasicNode(4, 2)));
-        ArrayList<Aresta> a4 = new ArrayList<>();
-        a4.add(new Aresta(new BasicNode(4, 1), new BasicNode(1, 1)));
-        a4.add(new Aresta(new BasicNode(4, 2), new BasicNode(2, 2)));
-        a4.add(new Aresta(new BasicNode(4, 2), new BasicNode(3, 2)));
-        a4.add(new Aresta(new BasicNode(4, 1), new BasicNode(5, 1)));
-        ArrayList<Aresta> a5 = new ArrayList<>();
-        a5.add(new Aresta(new BasicNode(5, 2), new BasicNode(1, 2)));
-        a5.add(new Aresta(new BasicNode(5, 1), new BasicNode(4, 1)));
-        ArrayList<ArrayList<Aresta>> arr = new ArrayList<>();
-        arr.add(new ArrayList<>());
-        arr.add(a1);
-        arr.add(a2);
-        arr.add(a3);
-        arr.add(a4);
-        arr.add(a5);
-        return arr;
-    }
 
     @Test
     void testCreate() {
@@ -128,6 +25,51 @@ class GrafoTest {
         }, () -> {
             assertEquals(11, g.getVisited().size(), "O tamanho da lista de visitados é diferente do tamanho configurado + 1");
         });
+    }
+
+    @Test
+    void testGetVerticesNumbers() {
+        Grafo g = new Grafo(5);
+        assertEquals(5, g.getVerticesNumber());
+    }
+
+    @Test
+    void testGetAdj() {
+        GrafoNoProtection g = new GrafoNoProtection(5);
+        ArrayList<ArrayList<Aresta>> adj = FakeGraphDataUtil.getExampleAdj();
+        g.setAdjacenciaImmediate(adj);
+        ArrayList<Aresta> copy = FakeGraphDataUtil.getExampleAdj().get(1);
+        assertEquals(copy, g.getAdjancencia(1), "a adjacencia do grafo deveria ser igual a informada");
+        copy.set(0, new Aresta(new BasicNode(0, 0), new BasicNode(1, 0)));
+        assertThat("as adjacecias deveriam ser diferentes", g.getAdjancencia(1), is(not(copy)));
+        copy.set(0, new Aresta(new BasicNode(1, 0), new BasicNode(3, 0)));
+        assertThat("as adjacecias deveriam ser diferentes", g.getAdjancencia(1), is(not(copy)));
+        ArrayList<Object> teste = new ArrayList<>();
+        teste.add(new Object());
+        assertThat("o objeto passado não é uma adjacencia", g.getAdjancencia(1), is(not(teste)));
+    }
+
+    @Test
+    void testAddTopSortEdge() {
+        GrafoNoProtection g = new GrafoNoProtection(2);
+        g.addTopSortEdge(new BasicNode(1, 0), new BasicNode(2, 0));
+        assertEquals(1, (int)g.getInEdges().get(2), "o vertice 2 tem uma aresta chegando apenas");
+    }
+
+    @Test
+    void testGetNodeByNumber() {
+        GrafoNoProtection g = new GrafoNoProtection(1);
+        assertNull(g.getNodeByNumberPublic(1), "não deveria ser possível obter um no em uma adjacencia vazia");
+    }
+
+    @Test
+    void testReset() {
+        GrafoNoProtection g = new GrafoNoProtection(5);
+        g.getVisited().set(0, true);
+        g.getMinDistance().set(0, 0);
+        g.reset();
+        assertFalse(g.getVisited().get(0), "reset do grafo deveria ter restaurando o visited");
+        assertEquals(Integer.MAX_VALUE, (int)g.getMinDistance().get(0), "reset do grafo deveria ter restaurando o min_distance");
     }
 
     @Test
@@ -165,24 +107,24 @@ class GrafoTest {
     @Test
     void testDfs() {
         GrafoNoProtection g = new GrafoNoProtection(5);
-        g.setAdjacenciaImmediate(getExampleAdj());
+        g.setAdjacenciaImmediate(FakeGraphDataUtil.getExampleAdj());
         assertEquals( 3, g.dfs(1), "A partir do vertice 1 é possível alcançar 3 outros vertices somente");
         g = new GrafoNoProtection(5);
-        g.setAdjacenciaImmediate(getExampleAdj());
+        g.setAdjacenciaImmediate(FakeGraphDataUtil.getExampleAdj());
         assertEquals(4, g.dfs(2), "A partir do vertice 2 é possível alcançar todos os outros vertices");
     }
 
     @Test
     void testPrim() {
         GrafoNoProtection g = new GrafoNoProtection(5);
-        g.setAdjacenciaImmediate(getExampleAdjUndirected());
+        g.setAdjacenciaImmediate(FakeGraphDataUtil.getExampleAdjUndirected());
         assertEquals(5, g.prim(1), "A soma dos custos da árvore geradora minima construida a partir do vertice 1 deve ser 5");
     }
 
     @Test
     void testDijkstra() {
         GrafoNoProtection g = new GrafoNoProtection(5);
-        g.setAdjacenciaImmediate(getExampleAdj());
+        g.setAdjacenciaImmediate(FakeGraphDataUtil.getExampleAdj());
         g.dijkstra(1);
         int[] values = new int[6];
         for (int i = 0; i < 6; i++) {
@@ -201,7 +143,7 @@ class GrafoTest {
         inEdges.add(0);
         inEdges.add(0);
         GrafoNoProtection g = new GrafoNoProtection(6);
-        g.setAdjacenciaImmediate(getExampleAdjTopSort());
+        g.setAdjacenciaImmediate(FakeGraphDataUtil.getExampleAdjDAG());
         g.setInEdgesImmediate(inEdges);
         ArrayList<Integer> sortedVertices = g.topologicalSort();
         int[] values = new int[6];

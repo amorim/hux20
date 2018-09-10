@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
-public class _562 extends BaseProblem {
+public class  _562 extends BaseProblem {
 
     public _562(InputStream in, PrintStream out) {
         super(in, out);
