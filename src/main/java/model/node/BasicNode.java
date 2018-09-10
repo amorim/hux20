@@ -5,6 +5,15 @@ public class BasicNode implements INode {
     public int weight;
     public int number;
 
+    public BasicNode() {
+
+    }
+
+    public BasicNode(int number, int weight) {
+        this.number = number;
+        this.weight = weight;
+    }
+
     @Override
     public int getNodeNumber() {
         return number;

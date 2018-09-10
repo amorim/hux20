@@ -47,7 +47,7 @@ public class _138 extends BaseProblem {
     private void byeCar(Car[] carros, int id) {
         Car carro = findCarById(carros, id);
         if (carro == null)
-            return;
+            throw new IllegalStateException("Não foi possível retirar o carro pois ele não está no estacionamento.");
         int start = carro.pos, end = carro.pos + carro.comp;
         for (int i = start; i < end; i++)
             carros[i] = null;
